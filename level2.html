@@ -1,0 +1,61 @@
+<!DOCtype html>
+<html>
+
+	<head>
+
+		<title>Level 2</title>
+	
+		<meta charset="utf-8">
+		
+		<!-- CSS files used-->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		<!-- JavaScript files used-->
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/data.js"></script>
+		<script type="text/javascript" src="js/helper.js"></script>
+		<script type="text/javascript" src="js/pageBuilderL2.js"></script>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	
+	</head>
+
+	<!-- Structure of webpage-->
+	<body>
+		<div class="container">
+			<div id="header" class="row">
+				<div id="bioInfo" class="col-sm-6"></div>
+				<div id="bioPic" class="col-sm-6" onmouseover="changePic()"></div>
+				<script>displayHeader()</script>
+			</div>
+			<button onclick="changeDisplay('Courses')" style="border-style: hidden solid solid solid; border-width: 4px; border-color: gray;"> show/hide Courses</button>
+			<div id="Courses" class="row">
+				<script>displayCourses()</script>
+			</div>
+			<button onclick="changeDisplay('Portfolio')" style="border-style: hidden solid solid solid; border-width: 4px; border-color: gray;"> show/hide Portfolio</button>
+			<div id="Portfolio" class="row">
+				<h2>Portfolio</h2>
+				<button onclick="changePortfolio()">Generate new portfolio</button>
+				<script>displayPortfolio()</script>
+			</div>
+			<button onclick="changeDisplay('About')" style="border-style: hidden solid solid solid; border-width: 4px; border-color: gray;"> show/hide About this Document </button>
+			<div id="About" class="row">
+				<h2>About this Page</h2>
+				<h3>Bootstrap</h3>
+				<h4>Bootstrap javascript and css files were used as frameworks to help the design process.</h4>
+				<h3>JQuery</h3>
+				<h4>JQuery was a library used to make the coding in javascript simpler.</h4>
+				<h3>JavaScript Source Files</h3>
+				<h4>Three JavaScript source files were used: data.js, helper.js, and pageBuilderL2.js. Data.js contained the data for the webpage, helper.js contained the html strings that would be appended, and pageBuilder contained the functions to build the webpage.</h4>
+				<h3>CSS Source Files</h3>
+				<h4>The only stylesheet used (besides bootstrap) was style.css which just contained all the data about how the page should look.</h4>
+				<h3>HTML Source Files</h3>
+				<h4>The only HTML file used was level2.html which contained all the structural information about the webpage.</h4>
+				<h3>Portfolio Files</h3>
+				<h4>The portfolio files contained all the html, css, and js files from every lab. This ws so that the URL to the different webpages created in those labs would work.</h4>
+				<h4><a href="level1.html">Link to Level 1</a></h4>
+			</div>
+		</div>
+	</body>
+</html>
